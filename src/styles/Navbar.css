@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.header-bg-dark {
+  background-color: #011933;
+  color: #f7f3ea;
+}
+
+.header-bg-light {
+  background-color: #f7f3ea;
+  color: #011933;
+}

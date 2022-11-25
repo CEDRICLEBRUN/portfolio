@@ -1,3 +1,4 @@
+import '../styles/Navbar.css'
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
@@ -7,8 +8,24 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
+  // Change nav color when scrolling
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if (window.scrollY <= ((window.screen.height) - (160 + 60))) {
+      setColor(false)
+    } else if (window.scrollY <= ((window.screen.height * 2) - ( 160 * 2 + 60))) {
+      setColor(true)
+    } else if (window.scrollY <= ((window.screen.height * 3) - (160 * 3 + 60))) {
+      setColor(false)
+    } else {
+      setColor(true)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   return (
-    <div className='fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#f7f3ea] text-xl text-[#011933]'>
+    <div className={color ? 'header header-bg-dark' : 'header header-bg-light'}>
 
       {/* Menu */}
       <ul className=' hidden md:flex'>
@@ -93,7 +110,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-
 
     </div>
   )
