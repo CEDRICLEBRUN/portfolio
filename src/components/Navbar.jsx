@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
+import {HiOutlineMail} from 'react-icons/hi';
 import {Link} from 'react-scroll';
 
 const Navbar = () => {
@@ -73,7 +74,24 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className='hidden'>
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <ul>
+          <li className='w-[160px] h-[50px] ml-[-100px] flex justify-between items-center hover:ml-[-10px] duration-300 bg-blue-500'>
+            <a href="https://www.linkedin.com/in/c%C3%A9dric-le-brun-64926383/" target="_blank" className='flex justify-between items-center w-full text-gray-300'>
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[50px] ml-[-100px] flex justify-between items-center hover:ml-[-10px] duration-300 bg-gray-500'>
+            <a href="https://github.com/CEDRICLEBRUN" target="_blank" className='flex justify-between items-center w-full text-gray-300'>
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[50px] ml-[-100px] flex justify-between items-center hover:ml-[-10px] duration-300 bg-red-500'>
+            <Link to="contact" smooth={true} duration={500} className='flex justify-between items-center w-full text-gray-300'>
+              Contact <HiOutlineMail size={30}/>
+            </Link>
+          </li>
+        </ul>
       </div>
 
 
