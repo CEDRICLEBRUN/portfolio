@@ -3,10 +3,12 @@ import {DiRor, DiJsBadge, DiHtml5, DiCss3, DiPostgresql, DiGithubBadge, DiHeroku
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='w-full h-screen bg-[#011933] text-[#f7f3ea]'>
       <div className='max-w-[1000px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
         <div>
-          <p>Skills</p>
+          <p className='text-4xl mx-16 font-bold inline border-b-4 border-[#f7f3ea]'>
+            Skills
+          </p>
         </div>
         <div className='w-full grid grid-cols-2 text-center py-8 sm:grid-cols-4 gap-4'>
           <div>
