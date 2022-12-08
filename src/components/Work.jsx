@@ -4,10 +4,6 @@ import { works } from "../data/works.js";
 
 const Work = () => {
 
-    // projects file
-    const project = works;
-    //setProject(data);
-
   return (
     <div name='work' className='w-full h-screen bg-[#f7f3ea] text-[#011933]'>
       <div className='max-w-[1000px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
