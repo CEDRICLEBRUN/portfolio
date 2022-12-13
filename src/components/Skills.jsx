@@ -3,7 +3,7 @@ import {DiRor, DiJsBadge, DiHtml5, DiCss3, DiPostgresql, DiGithubBadge, DiHeroku
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#011933] text-[#f7f3ea]'>
+    <div name='skills' className='w-full min-h-screen bg-[#011933] text-[#f7f3ea]'>
       <div className='max-w-[1000px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
         <div>
           <p className='text-4xl mx-16 font-bold inline border-b-4 border-[#f7f3ea]'>

@@ -5,7 +5,7 @@ import { works } from "../data/works.js";
 const Work = () => {
 
   return (
-    <div name='work' className='w-full h-screen bg-[#f7f3ea] text-[#011933]'>
+    <div name='work' className='w-full min-h-screen bg-[#f7f3ea] text-[#011933]'>
       <div className='max-w-[1000px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
         <div>
           <p className='text-4xl mx-16 font-bold inline border-b-4 border-[#011933]'>
